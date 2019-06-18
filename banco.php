@@ -30,9 +30,10 @@ function gravar_tarefa($conexao, $tarefa)
     INSERT INTO tarefas
     (
         '{$tarefa['nome']}',
-        '{$tarefa['descricao]}',
+        '{$tarefa['descricao']}',
          {$tarefa['prioridade']}
     )
+    ";
     ";
     mysqli_query($conexao, $sqlGravar);
 }
