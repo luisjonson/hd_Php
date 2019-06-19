@@ -50,6 +50,10 @@
     <table>
     <tr>
         <th>Tarefas</th>
+        <th>Descrição</th>
+        <th>Prazo</th>
+        <th>Prioriidade</th>
+        <th>Concluida</th>
     </tr>
 
     <?php foreach ($lista_tarefas as $tarefa) : ?>
@@ -57,7 +61,7 @@
             <td><?php echo $tarefa['nome']; ?> </td>
             <td><?php echo $tarefa['descricao']; ?></td>
             <td><?php echo $tarefa['prazo']; ?></td>
-            <td><?php echo $tarefa['prioridade']; ?></td>
+            <td><?php echo traduz_prioridade($tarefa['prioridade']); ?></td>
             <td><?php echo $tarefa['concluida']; ?></td>
         </tr>
     <?php endforeach; ?>
