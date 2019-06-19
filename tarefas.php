@@ -30,15 +30,8 @@ if (isset($_GET['nome']) && $_GET['nome'] != '') {
 
     //$_SESSION['lista_tarefas'][] = $tarefa;
 
-    gravar_tarefa($conexao, $tarefa);
     
     }
-
-    //if (isset($_SESSION['lista_tarefas'])) {
-    //   $lista_tarefas = $_SESSION['lista_tarefas'];
-    //} else {
-    //  $lista_tarefas = array();
-    //}
 
     $lista_tarefas = buscar_tarefas($conexao);
 
