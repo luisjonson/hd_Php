@@ -11,6 +11,7 @@ if(mysqli_connect_errno($conexao)){
     echo "Problema para conectar no banco. Verifique os dados!";
     die();
 }
+
 function buscar_tarefas($conexao)
 {
     $sqlBusca = 'SELECT * FROM tarefas';

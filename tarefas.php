@@ -14,7 +14,7 @@ if (isset($_GET['nome']) && $_GET['nome'] != '') {
     if(isset($_GET['descricao'])){
         $tarefa['descricao'] = $_GET['descricao'];
     }else{
-        $tarefa['descriicao'] = '';
+        $tarefa['descricao'] = '';
     }                                                                                                 
     
     if(isset($_GET['prazo'])){

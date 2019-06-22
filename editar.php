@@ -27,7 +27,7 @@
 
         $tarefa['prioridade'] = $_GET['prioridade'];
 
-        ifI(isset($_GET['concluida'])){
+        if(isset($_GET['concluida'])){
             $tarefa['concluida'] = 1;
         }else{
             $tarefa['concluida'] = 0;
@@ -36,6 +36,6 @@
         editar_tarefa($conexao, $tarefa);
     }
 
-    $tarefa = buscar_tarefa($conexao,$_GET['id']);
+    $tarefa = buscar_tarefa($conexao, $_GET['id']);
 
-    include "template.php"
+    include "template.php";
